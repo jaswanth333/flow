@@ -4,7 +4,7 @@ import {
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,
-    MatCheckboxModule,
+    MatCheckboxModule,  
     MatToolbarModule,
     MatTooltipModule,
     MatCardModule,
