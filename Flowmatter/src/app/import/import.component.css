@@ -1,0 +1,21 @@
+h1 {
+  
+    position: relative;
+    text-align: initial;
+}
+
+ .example-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+  overflow: auto;
+}
+
+.examples-container {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+  border: 1px solid #555;
+  color: black;
+}

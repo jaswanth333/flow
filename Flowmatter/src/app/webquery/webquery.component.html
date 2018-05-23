@@ -1,0 +1,22 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened="true">
+      <mat-form-field>
+        <mat-select placeholder="tables" >
+          <mat-option value="option1">table-1</mat-option>
+          <mat-option value="option2">table-2</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Enter table name">
+      </mat-form-field>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      &nbsp;&nbsp;<button mat-raised-button color="primary">Custom Query</button>&nbsp;&nbsp;
+      <button mat-raised-button color="primary">Save Page</button>
+      <mat-form-field>
+      <input matInput placeholder="Enter saved Query/Page">
+      </mat-form-field>
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-card></mat-card>
+      </mat-drawer-content>
+  </mat-drawer-container>
