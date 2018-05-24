@@ -6,6 +6,8 @@ import { MaterialModule } from './material-module/material-module.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExportTemplateComponent } from './export-template/export-template.component';
+import { NsvComponent } from './nsv/nsv.component';
+import { NsvtwoComponent } from './nsvtwo/nsvtwo.component';
 import { ImportTemplateComponent } from './import-template/import-template.component';
 import { ConvertTemplateComponent } from './convert-template/convert-template.component';
 import { SideNavComponent } from './side-nav/side-nav.component'
