@@ -6,7 +6,8 @@ import { MaterialModule } from './material-module/material-module.module';
 import { ImportComponent } from './import/import.component';
 import { NextComponent } from './next/next.component';
 import { ConvertComponent } from './convert/convert.component';
-import { WebqueryComponent } from './webquery/webquery.component'
+import { WebqueryComponent } from './webquery/webquery.component';
+import { ExportComponent } from './export/export.component'
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { WebqueryComponent } from './webquery/webquery.component'
     NextComponent,
     ConvertComponent,
     WebqueryComponent,
+    ExportComponent,
     
   ],
   imports: [

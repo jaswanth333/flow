@@ -1,6 +1,6 @@
 <mat-card>
   <h1><mat-icon>settings</mat-icon>  Import source data into cloud DB</h1></mat-card>
-  select the importer:
+  <h2>select the importer:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <mat-form-field>
     <mat-select >
       <mat-option value="option1">csvConnector</mat-option>
@@ -13,12 +13,10 @@
   <button mat-raised-button color="warn">STOP</button>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <button mat-raised-button color="primary">Edit import activity</button>
+  <button mat-raised-button color="primary">Edit import activity</button></h2>
   <mat-tab-group>
     <mat-tab label="Import status">PREVIOUSLY IMPORTED STATUS:
-      <div class="example-container mat-elevation-z8">
+      <div class="tableimport mat-elevation-z8">
         <table mat-table #table [dataSource]="dataSource">
       
           <!--- Note that these columns can be defined in any order.
@@ -85,7 +83,7 @@
       </div>
     </mat-tab>
     <mat-tab label="Imported source files">
-        <mat-sidenav-container class="examples-container">
+        <mat-sidenav-container class="sidenav-container">
             <mat-sidenav mode="side" opened>drawer content</mat-sidenav>
             <mat-sidenav-content>
             main content

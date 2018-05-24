@@ -4,7 +4,7 @@ h1 {
     text-align: initial;
 }
 
- .example-container {
+ .tableimport {
   display: flex;
   flex-direction: column;
   max-height: 500px;
@@ -12,7 +12,7 @@ h1 {
   overflow: auto;
 }
 
-.examples-container {
+.sidenav-container {
   width: 400px;
   height: 200px;
   margin: 50px;
