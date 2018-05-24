@@ -1,0 +1,31 @@
+
+  <mat-sidenav-container class="container">
+          
+      <mat-sidenav mode="side" opened class="nav">
+          <mat-list>
+                              
+      <mat-list-item>
+          <a routerLink="/import-template" ><img src="\assets\images\CSV.png" height="30px" width="30px">CSV CONNECTOR</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+          <a routerLink="/"><img src="\assets\images\database.png" height="30px" width="30px">RBMS CONNECTOR</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+          <a routerLink="/" ><img src="\assets\images\salesforce.png" height="30px" width="30px">SALESFORCE CONNECTOR</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+          <a routerLink="/" ><img src="\assets\images\excel.png" height="30px" width="30px">EXCEL CONNECTOR</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+          </mat-list>
+      </mat-sidenav>
+              
+      
+            <router-outlet class="outlet"></router-outlet>
+            
+  </mat-sidenav-container>
+
+

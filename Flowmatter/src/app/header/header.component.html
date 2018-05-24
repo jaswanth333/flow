@@ -1,0 +1,26 @@
+
+<mat-toolbar>
+
+  <img src=".\assets\images\poinmatter.png" alt="pointmatter" routerLink="/mainmenu">
+
+    <button mat-menu-item [matMenuTriggerFor]="configsubmenu">
+      <mat-icon color="white">settings</mat-icon>Configuration<mat-icon color="white">keyboard_arrow_down</mat-icon>
+    </button>
+    
+    <button mat-menu-item>
+      <mat-icon color="white">home</mat-icon>Dash Board
+    </button>
+    
+    
+    <button mat-menu-item>
+      <mat-icon color="white" >help_outline</mat-icon>Help
+    </button>
+    <mat-menu #configsubmenu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item ><span class="clr">Manage DataSource</span></button>
+      <button mat-menu-item routerLink="/import-template">Import Activity</button>
+      <button mat-menu-item routerLink="/export-template">Export Activity</button>
+      <button mat-menu-item routerLink="/Convert-template">Convert Activity</button>
+    </mat-menu>
+
+</mat-toolbar>
+
