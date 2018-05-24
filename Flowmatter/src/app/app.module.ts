@@ -53,6 +53,15 @@ import {RouterModule} from '@angular/router';
         path:'convert-template',
         component:ConvertTemplateComponent,
      },
+
+     {
+      path:'nsv',
+      component:NsvComponent,
+   },
+   {
+    path:'nsvtwo',
+    component:NsvtwoComponent,
+ },
        
     ]),
   ],
