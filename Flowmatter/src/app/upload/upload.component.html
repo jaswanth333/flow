@@ -1,0 +1,52 @@
+<mat-toolbar><h2><img src="\assets\images\Upload-512.png" width="40px" height="40px">Upload & Review Source Files in cloud Folder</h2></mat-toolbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened="true">
+   <h3> <mat-icon>play_arrow</mat-icon>
+    <mat-icon>folder</mat-icon> Download Target Files</h3>
+  </mat-drawer>
+  <mat-drawer-content>
+    <h2>Upload source files to Cloud  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn-1"mat-raised-button color="primary">
+        <mat-icon>backup</mat-icon> Upload
+      </button>
+      &nbsp;
+      <button class="btn-2" mat-raised-button color="warn" ><mat-icon>delete</mat-icon></button></h2>
+
+
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let element"> <p>{{element.position}}</p> </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Date Modified </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef> Type </th>
+          <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="symbol">
+          <th mat-header-cell *matHeaderCellDef> Size </th>
+          <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      
+      
+  </mat-drawer-content>
+</mat-drawer-container>
