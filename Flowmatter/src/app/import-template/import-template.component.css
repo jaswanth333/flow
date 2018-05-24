@@ -50,5 +50,7 @@ h1{
     width: 270px;
     align-items: center;
     text-align: center;
+    display: inline-block;
 
 }
+
