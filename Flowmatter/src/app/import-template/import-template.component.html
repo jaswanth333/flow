@@ -1,21 +1,23 @@
 
+    
 <mat-form-field class="form">
-    <h1>Select the Collector:</h1>
-    <mat-select placeholder="Choose connector" required>
+  
+    <mat-select class="select" placeholder="Choose connector" required>
       <mat-option value="connector" >CSV CONNECTOR</mat-option>
       <mat-option value="connector" >RDBMS CONNECTOR</mat-option>
       <mat-option value="connector" >SALESFORCE CONNECTOR</mat-option>
       <mat-option value="connector" >EXCEL CONNECTOR</mat-option>
     </mat-select>
-      <h1><mat-icon>settings</mat-icon>
   </mat-form-field>
 
-  <div class="content">icon>Import Template</h1>
-      <fieldset>
+
+  <div class="content">
+      <h1><mat-icon>settings</mat-icon>Import Template</h1>
+      <fieldset class="fs-1">
         <legend>Active Template:</legend>
         <button class="btn-1" mat-raised-button>Download<mat-icon>get_app</mat-icon></button>
       </fieldset>
-      <fieldset>
+      <fieldset class="fs-2">
           <legend>Upload Template:</legend>
               <input type="file" name="fileupload" value="fileupload">   
               <button class="btn-2" mat-raised-button >Upload</button>      
