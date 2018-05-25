@@ -1,29 +1,26 @@
 
 <mat-toolbar>
-  <img src=".\assets\images\poinmatter.png" alt="pointmatter" routerLink="/mainmenu">
-  <div class="container">
-   
-    <span mat-menu-item [matMenuTriggerFor]="configsubmenu">
-      <mat-icon color="white" >settings</mat-icon>Configuration<mat-icon color="white">keyboard_arrow_down</mat-icon>
-    </span>
-   
-    <span mat-menu-item>
-      <mat-icon color="white">home</mat-icon>Dash Board
-    </span>
-  
+
+  <img src=".\assets\images\poinmatter.png" alt="pointmatter" routerLink="/app">
+
+    <button mat-menu-item [matMenuTriggerFor]="configsubmenu">
+      <mat-icon color="white">settings</mat-icon>Configuration<mat-icon color="white">keyboard_arrow_down</mat-icon>
+    </button>
     
-    <span mat-menu-item>
-      <mat-icon color="white">help_outline</mat-icon>Help
-    </span>
-   
-  </div>
+    <button mat-menu-item>
+      <mat-icon color="white">home</mat-icon>Dash Board
+    </button>
+    
+    
+    <button mat-menu-item>
+      <mat-icon color="white" >help_outline</mat-icon>Help
+    </button>
+    <mat-menu #configsubmenu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item ><span class="clr">Manage DataSource</span></button>
+      <button mat-menu-item routerLink="/import-template">Import Activity</button>
+      <button mat-menu-item routerLink="/export-template">Export Activity</button>
+      <button mat-menu-item routerLink="/convert-template">Convert Activity</button>
+    </mat-menu>
+
 </mat-toolbar>
 
- <div class='drop-down'>
-<mat-menu #configsubmenu="matMenu" [overlapTrigger]="false">
-    <span mat-menu-item >Manage DataSource</span>
-    <span mat-menu-item routerLink="/import-template">Import Activity</span>
-    <span mat-menu-item routerLink="/export-template">Export Activity</span>
-    <span mat-menu-item routerLink="/convert-template">Convert Activity</span>
-  </mat-menu>
-</div>

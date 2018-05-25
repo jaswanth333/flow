@@ -1,8 +1,7 @@
-.footer{
-    background-color:silver;
-    position: fixed;
-    left: 0;
+mat-toolbar{
+    background-color: rgb(196, 196, 196);
+    height:5%;
     bottom: 0;
-    width: 100%;
-  
+    position:absolute;
+   width:100%;
 }

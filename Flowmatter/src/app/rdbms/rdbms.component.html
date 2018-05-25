@@ -1,0 +1,67 @@
+<h3>New RDBMS Datasource</h3>
+     
+    <hr />
+
+<form>
+    <div class="container col-md-6 col-md-offset-3">
+        <form action="/action_page.php">
+               <div class="form-group ">
+                    <label for="name">Name:</label>
+                    <input type="name" required class="form-control" id="name" placeholder="Enter Data Source Name" name="name">
+                </div>
+
+                    <div class="form-group">
+                        <label for="desc">Description:</label>
+                        <textarea class="form-control" id="desc" placeholder="Enter Data Source Description">
+                </textarea>
+                    </div>
+               
+
+                <div class="form-group">
+                    <label for="sourcetype">Source Type:</label>
+                    <select class="form-control" id="source" required>
+                        <option id="1">MySql</option>
+                        <option id="2">Sql Server</option>
+                        <option id="3">Oracle</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="auth">Authentication Type:</label>
+                    <select class="form-control" id="auth" required>
+                        <option id="1">Windows Authentication</option>
+                        <option id="2">Sql Server Authentication</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="server">Server:</label>
+                    <input class="form-control" required id="server" placeholder="Enter Server">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="dbname">Database Name:</label>
+                    <input class="form-control" required id="server" placeholder="Enter Database Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="username">User Name:</label>
+                    <input class="form-control" required id="username" placeholder="Enter UserName">
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Password:</label>
+                    <input class="form-control" required id="pass" placeholder="Enter Password">
+                </div>
+
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-info" value="Submit">
+                </div>
+
+            </form>
+</div>
+</form>
+
+

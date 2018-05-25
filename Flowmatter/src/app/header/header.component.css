@@ -1,24 +1,26 @@
+button.mat-menu-item{
+    background-color:#3D5C87; 
+    font-size: 14px;
+}
+
+/*button.mat-menu.mat-menu-item{
+    background-color:#3D5C87;
+    
+}*/
+
+
+button.mat-menu-item:hover{
+    background-color:rgb(255, 113, 62);
+    
+}
 
 mat-toolbar{
     background-color: #3D5C87;
     width: 100%;
-    height:8%;
-   
-}
-.container{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    height: 10%;
 }
 
-span{
-    color:white;
-    background-color: #3D5C87;
-}
-
-
-
-span.mat-menu-item:hover{
-    background-color:silver;
+button{
+    color: white;
 }
 
