@@ -5,10 +5,12 @@
     border: 1px solid #555;
   }
 
-  mat-drawer
-  {
-     background-color: lightblue;
-     width:300px;
+
+    mat-drawer
+    {
+       background-color: rgb(214, 240, 248);
+       width:300px;
+   
   }
 
   mat-card

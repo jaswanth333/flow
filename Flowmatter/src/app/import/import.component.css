@@ -10,6 +10,7 @@ h1 {
   max-height: 500px;
   min-width: 300px;
   overflow: auto;
+  border: solid black;
 }
 
 .sidenav-container {
@@ -18,4 +19,10 @@ h1 {
   margin: 50px;
   border: 1px solid #555;
   color: black;
+}
+
+th{
+  background-color: rgb(225, 227, 228);
+  color: black;
+  font-size: 15px;
 }
