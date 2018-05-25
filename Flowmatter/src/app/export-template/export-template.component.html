@@ -1,20 +1,24 @@
-<h1>Select the Collector:</h1>
-<mat-form-field class="form">
-    <mat-select>
-      <mat-option value="connector" >CSV CONNECTOR</mat-option>
-      <mat-option value="connector" >EXCEL CONNECTOR</mat-option>
-    </mat-select>
-  </mat-form-field>
+<div class="container">
+    <h3>Select the Collector</h3>
+    <mat-form-field>
+      <label></label> <mat-select placeholder="Choose Connector" required >
+            <mat-option value="connector" >CSV CONNECTOR</mat-option>
+            <mat-option value="connector" >EXCEL CONNECTOR</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+  <mat-divider></mat-divider>
+
 
   <div class="content">
-      <h1><mat-icon>settings</mat-icon>Export Template</h1>
-      <fieldset>
+
+      <div class="content-1">
         <legend>Active Template:</legend>
         <button class="btn-1" mat-raised-button>Download<mat-icon>get_app</mat-icon></button>
-      </fieldset>
-      <fieldset>
+      </div>
+      <div class="content-2">
           <legend>Upload Template:</legend>
               <input type="file" name="fileupload" value="fileupload">   
               <button class="btn-2" mat-raised-button >Upload</button>      
-        </fieldset>  
+      </div>  
       </div>
