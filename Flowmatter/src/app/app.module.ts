@@ -9,7 +9,8 @@ import { ConvertComponent } from './convert/convert.component';
 import { WebqueryComponent } from './webquery/webquery.component';
 import { ExportComponent } from './export/export.component';
 import { ReviewComponent } from './review/review.component';
-import { UploadComponent } from './upload/upload.component'
+import { UploadComponent } from './upload/upload.component';
+import { CsvconComponent } from './csvcon/csvcon.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { UploadComponent } from './upload/upload.component'
     ExportComponent,
     ReviewComponent,
     UploadComponent,
+    CsvconComponent,
     
   ],
   imports: [
