@@ -1,29 +1,20 @@
 <mat-toolbar>
-  <mat-toolbar-row>
-    <div><img src="assets\images\config.png" height=25 width=25>&nbsp;&nbsp;Download</div>
-  </mat-toolbar-row>
-</mat-toolbar>
-<div class="container">
-  <h3>Select the Collector</h3>
-  <mat-form-field>
-    <label></label> <mat-select placeholder="Choose Connector" required >
-          <mat-option value="connector" >CSV CONNECTOR</mat-option>
-          <mat-option value="connector" >EXCEL CONNECTOR</mat-option>
-      </mat-select>
-    </mat-form-field>
-</div>
-<mat-divider></mat-divider>
-<br/>
-<br/>
-<div class="content">
-  <h1><mat-icon>settings</mat-icon>Convert Template</h1>
-  <fieldset class="fs-1">
-    <legend>Active Template:</legend>
-    <button class="btn-1" mat-raised-button>Download<mat-icon>get_app</mat-icon></button>
-  </fieldset>
-  <fieldset class="fs-2">
-      <legend>Upload Template:</legend>
-          <input type="file" name="fileupload" value="fileupload">   
-          <button class="btn-2" mat-raised-button >Upload</button>      
-    </fieldset>  
-  </div>
+    <img src="\assets\images\config.png" width="25" height="25" alt="configuration_icon">
+      <div>&nbsp;&nbsp;Download Content</div>
+  </mat-toolbar>
+  <mat-divider></mat-divider>
+  <br/>
+  <br/>
+  <div class="content">
+    <h1><mat-icon>settings</mat-icon>Convert Template</h1>
+    <fieldset class="fs-1">
+      <legend>Active Template:</legend>
+      <button class="btn-1" mat-raised-button>Download<mat-icon>get_app</mat-icon></button>
+    </fieldset>
+    <fieldset class="fs-2">
+        <legend>Upload Template:</legend>
+            <input type="file" name="fileupload" value="fileupload">   
+            <button class="btn-2" mat-raised-button >Upload</button>      
+      </fieldset>  
+    </div>
+  

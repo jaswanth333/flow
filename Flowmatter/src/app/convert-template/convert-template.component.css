@@ -1,23 +1,20 @@
 .content{
     position: relative;
     left: 30%;
-    top: 40%;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding:30px;
     border-radius: 25px;
     border: 1px solid silver; 
-    width: 40%;
-    
+    max-width:50%;    
 }
 .container{
-    display:flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
 }
 
-h2{
-    color: silver;
-}
 .btn-1
 {
     background-color: rgb(62, 185, 62);
@@ -30,11 +27,10 @@ fieldset{
     left: 5%;
     padding: 10px;
     margin: 10px;
-    height: 100px;
-    width: 80%;
+    height: 10vh;
+    width: 40vw;
     text-align: left;
 }
-
 
 
 .btn-2
@@ -53,5 +49,12 @@ fieldset{
 .content-2{
     border: 1px solid silver;
     margin: 5%;
-}
 
+}
+mat-toolbar{
+    width:100%;
+    height: fit-content;
+    padding: 3px;
+    display: flex;
+    align-content: space-between;
+}
