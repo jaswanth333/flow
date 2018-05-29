@@ -1,18 +1,23 @@
 .content{
     position: relative;
     left: 30%;
-    opacity:50% ;
-    margin: 5px;
+    top: 40%;
+
+    padding:30px;
     border-radius: 25px;
-    border: 2px solid black; 
+    border: 1px solid silver; 
     width: 40%;
-    height: 400px; 
+    
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-input{
-    size:50;
+h2{
+    color: silver;
 }
-
 .btn-1
 {
     background-color: rgb(62, 185, 62);
@@ -30,9 +35,7 @@ fieldset{
     text-align: left;
 }
 
-input{
-   width: 100%;
-}
+
 
 .btn-2
 {
@@ -42,13 +45,13 @@ input{
     
 }
 
-h1{
-    text-align: center;
+.content-1{
+    border: 1px solid silver;
+    margin: 5%;
 }
 
-.form{
-    width: 270px;
-    align-items: center;
-    text-align: center;
-
+.content-2{
+    border: 1px solid silver;
+    margin: 5%;
 }
+

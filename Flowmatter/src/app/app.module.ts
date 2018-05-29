@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material-module/material-module.module';
+import { RdbmsComponent } from './rdbms/rdbms.component';
+import { SalesComponent } from './sales/sales.component';
+import { ExcelComponent } from './excel/excel.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExportTemplateComponent } from './export-template/export-template.component';
@@ -12,18 +15,26 @@ import { ImportTemplateComponent } from './import-template/import-template.compo
 import { ConvertTemplateComponent } from './convert-template/convert-template.component';
 import { SideNavComponent } from './side-nav/side-nav.component'
 import {RouterModule} from '@angular/router';
+import { MainComponent } from './main/main.component';
+import { DataflowComponent } from './dataflow/dataflow.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NsvComponent,
-    NsvtwoComponent,
-    HeaderComponent,
-    FooterComponent,
+    RdbmsComponent,
+    SalesComponent,
+    ExcelComponent,
     ExportTemplateComponent,
     ImportTemplateComponent,
-    ConvertTemplateComponent,
+    HeaderComponent,
+    FooterComponent,
     SideNavComponent,
+    ConvertTemplateComponent,
+    NsvComponent,
+    NsvtwoComponent,
+    MainComponent,
+    DataflowComponent,
     
   ],
   imports: [
@@ -32,11 +43,7 @@ import {RouterModule} from '@angular/router';
     MaterialModule,
     RouterModule.forRoot([
   
-      {
-        path: '', redirectTo:'header ', pathMatch: 'full',
-       
-      },
-
+      
       {
         path:'import-template',
         component:ImportTemplateComponent,
@@ -62,6 +69,28 @@ import {RouterModule} from '@angular/router';
     path:'nsvtwo',
     component:NsvtwoComponent,
  },
+ {
+  path:'rdbms',
+  component:RdbmsComponent,
+},
+{
+  path:'sales',
+  component:SalesComponent,
+},
+{
+  path:'excel',
+  component:ExcelComponent,
+},
+{
+path:'side-nav',
+component:SideNavComponent,
+},
+
+{
+  path:'dataflow',
+  component:DataflowComponent,
+}
+
        
     ]),
   ],

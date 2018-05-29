@@ -1,16 +1,16 @@
 .content{
     position: relative;
     left: 30%;
-    top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding:30px;
-    margin: 5px;
     border-radius: 25px;
-    border: 2px solid silver; 
-    width: 40%;
-    
+    border: 1px solid silver; 
+    max-width:50%;    
 }
 .container{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -30,8 +30,8 @@ fieldset{
     left: 5%;
     padding: 10px;
     margin: 10px;
-    height: 100px;
-    width: 80%;
+    height: 10vh;
+    width: 40vw;
     text-align: left;
 }
 
@@ -55,3 +55,6 @@ fieldset{
     margin: 5%;
 }
 
+mat-toolbar{
+    width:100%;
+}

@@ -1,24 +1,57 @@
+.content{
+    position: relative;
+    left: 30%;
+    top: 40%;
+
+    padding:30px;
+    border-radius: 25px;
+    border: 1px solid silver; 
+    width: 40%;
+    
+}
 .container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-mat-card{
-    height:10%;
+h2{
+    color: silver;
 }
-.container h4{
-    padding: 1%;
+.btn-1
+{
+    background-color: rgb(62, 185, 62);
+    color:white;
+    border-radius: 5px;
 }
 
-.main{
-    border: 1px solid silver;
-    border-radius: 5px;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left:30%;
-    width: 40%;
-    height:40%;
-    justify-content: center;
+fieldset{
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 80%;
+    text-align: left;
 }
+
+
+
+.btn-2
+{
+    background-color: steelblue;
+    color:white;
+    border-radius: 5px;
+    
+}
+
+.content-1{
+    border: 1px solid silver;
+    margin: 5%;
+}
+
+.content-2{
+    border: 1px solid silver;
+    margin: 5%;
+}
+

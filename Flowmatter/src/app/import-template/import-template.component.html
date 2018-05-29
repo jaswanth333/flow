@@ -15,30 +15,17 @@
     </mat-form-field>
 </div>
 <mat-divider></mat-divider>
-
-<div class="main">
-  <mat-icon>settings</mat-icon> Import Template
-  <fieldset>
+<br/>
+<br/>
+<div class="content">
+  <h1><mat-icon>settings</mat-icon>Import Template</h1>
+  <fieldset class="fs-1">
     <legend>Active Template:</legend>
+    <button class="btn-1" mat-raised-button>Download<mat-icon>get_app</mat-icon></button>
   </fieldset>
-</div>
-
- 
-
-
-
-
-
-
-
-<!--
-
-  <form>
-    <select required>
-      <option value="connector" size="20" default> CSV</option>
-      <option value="connector" size="20">RDBMS</option>
-      <option value="connector" size="20">SALESFORCE</option>
-      <option value="connector" size="20">EXCEL</option>
-    </select>
-  </form>
--->
+  <fieldset class="fs-2">
+      <legend>Upload Template:</legend>
+          <input type="file" name="fileupload" value="fileupload">   
+          <button class="btn-2" mat-raised-button >Upload</button>      
+    </fieldset>  
+  </div>
