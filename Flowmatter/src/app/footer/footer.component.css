@@ -2,6 +2,6 @@
     background-color: rgb(196, 196, 196);
     height:fit-content;
     bottom: 0;
-    position:absolute;
+    position:fixed;
    width:100%;
 }
