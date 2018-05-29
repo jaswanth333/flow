@@ -15,9 +15,6 @@
     justify-content: space-around;
 }
 
-h2{
-    color: silver;
-}
 .btn-1
 {
     background-color: rgb(62, 185, 62);
@@ -36,7 +33,6 @@ fieldset{
 }
 
 
-
 .btn-2
 {
     background-color: steelblue;
@@ -53,8 +49,8 @@ fieldset{
 .content-2{
     border: 1px solid silver;
     margin: 5%;
-}
 
+}
 mat-toolbar{
     width:100%;
 }
