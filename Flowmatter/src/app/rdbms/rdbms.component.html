@@ -1,72 +1,68 @@
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-</head>
+<mat-toolbar>
+        <div>New RDBMS DataSource</div>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
 
+    <div class="form-container">
+    <mat-form-field>
+        <input matInput type="text" placeholder="Datasource Name" required >
+    </mat-form-field>
+    
+    <mat-form-field>
+            <input matInput type="text" placeholder="Description" required>
+    </mat-form-field>
 
-<h3>New RDBMS Datasource</h3>
-     
-    <hr />
+    <mat-form-field>
+        <mat-select placeholder="Choose Server" onchange="Myfun()" id="sel0">
+            <mat-option value="mysql" >MySql</mat-option> 
+            <mat-option value="server">Sql Server</mat-option>
+            <mat-option value="server">Oracle</mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field id="sel">
+            <mat-select placeholder="Choose Authentication" >
+                <mat-option value="windows Authentication" >MySql</mat-option> 
+                <mat-option value="SQL Authentication">Sql Server</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+    <mat-form-field>
+            <input matInput type="text" placeholder="Server" required>
+    </mat-form-field>
 
+    <mat-form-field>
+            <input matInput type="text" placeholder="Database Name" required>
+    </mat-form-field>
 
-    <div class="container col-md-6 col-md-offset-3">
-        <form action="/action_page.php">
-               <div class="form-group ">
-                    <label for="name">Name:</label>
-                    <input type="name" required class="form-control" id="name" placeholder="Enter Data Source Name" name="name">
-                </div>
+    <mat-form-field>
+            <input matInput type="text" placeholder="User Name" required>
+    </mat-form-field>
 
-                    <div class="form-group">
-                        <label for="desc">Description:</label>
-                        <textarea class="form-control" id="desc" placeholder="Enter Data Source Description">
-                </textarea>
-                    </div>
-               
-
-                <div class="form-group">
-                    <label for="sourcetype">Source Type:</label>
-                    <select class="form-control" id="source" required>
-                        <option id="1">MySql</option>
-                        <option id="2">Sql Server</option>
-                        <option id="3">Oracle</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="auth">Authentication Type:</label>
-                    <select class="form-control" id="auth" required>
-                        <option id="1">Windows Authentication</option>
-                        <option id="2">Sql Server Authentication</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="server">Server:</label>
-                    <input class="form-control" required id="server" placeholder="Enter Server">
-                </div>
-
-
-                <div class="form-group">
-                    <label for="dbname">Database Name:</label>
-                    <input class="form-control" required id="server" placeholder="Enter Database Name">
-                </div>
-
-                <div class="form-group">
-                    <label for="username">User Name:</label>
-                    <input class="form-control" required id="username" placeholder="Enter UserName">
-                </div>
-
-                <div class="form-group">
-                    <label for="pass">Password:</label>
-                    <input class="form-control" required id="pass" placeholder="Enter Password">
-                </div>
-
-
-                <div class="text-center">
-                    <input type="submit" class="btn btn-info" value="Submit">
-                </div>
-
-            </form>
+    <mat-form-field>
+            <input matInput type="text" placeholder="Password" required>
+    </mat-form-field>
+    
+        <button mat-raised-button color="primary" >Submit</button>
 </div>
 
+<script src="text/javascript">
+
+    function Myfun()
+    {
+        var el=document.getElementById("sel0");
+
+        if(el.value=="MySql")
+        {
+           document.getElementById("sel").style.display="none";
+        }
+
+        else
+        {
+            document.getElementById("sel").style.display="show";
+        }
+    }
 
 
+
+</script>

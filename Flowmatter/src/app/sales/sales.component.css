@@ -1,0 +1,15 @@
+.form-container{
+    margin: 1in;
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60%;
+    left: 30%;
+}
+
+button{
+    align-self: center;
+    width: fit-content;
+}

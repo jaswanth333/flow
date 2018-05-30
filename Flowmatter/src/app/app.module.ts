@@ -19,7 +19,7 @@ import { MainComponent } from './main/main.component';
 import { DataflowComponent } from './dataflow/dataflow.component';
 
 const router: Routes = [
-  { path: '', redirectTo: '/main', pathMatch: 'full' },
+
   {path: 'main', component: MainComponent },
   {path:'dashboard',component:DataflowComponent},
   {path:'import-template',component:ImportTemplateComponent},
