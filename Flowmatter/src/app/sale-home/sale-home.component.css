@@ -2,9 +2,6 @@ table {
     width: 100%;
   }
   
-  p{
-    color: blue;
-  }
   
   th{
     
@@ -25,3 +22,9 @@ table {
   mat-toolbar .content{
     align-items: flex-start;
   }
+
+p{
+  color:black;
+  font-size: 14;
+  font-style:bold;
+}

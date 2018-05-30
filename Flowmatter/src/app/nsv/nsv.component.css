@@ -3,7 +3,9 @@ table {
 }
 
 p{
-  color: blue;
+  color:black;
+  font-size: 14;
+  font-style:bold;
 }
 
 th{

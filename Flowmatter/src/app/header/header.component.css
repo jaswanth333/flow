@@ -6,10 +6,9 @@ mat-toolbar{
     
     
 }
-.container{ 
+mat-toolbar .container{ 
     display:flex;
     flex-direction: row;
-
     align-items: flex-end;
 }
 
@@ -19,8 +18,7 @@ span{
 }
 
 span:hover{
-    color:gray;
-    opacity: 0.4;
+    color:black;
     background-color:#3D5C87;
 }
 

@@ -7,7 +7,8 @@
 
 .nav
 {
-   
+    width: 20%;
+    padding:5px;
     font-size: 14;
     border-right: 1px solid gray;
     
@@ -32,7 +33,7 @@ mat-list-item a{
 
 mat-list-item a:hover{
 	
-	background-color:silver;
+	background-color:rgb(192, 192, 192);
 	color:black;
 }
 

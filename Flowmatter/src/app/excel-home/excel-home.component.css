@@ -2,9 +2,11 @@ table {
     width: 100%;
   }
   
-  p{
-    color: blue;
-  }
+ p{
+  color:black;
+  font-size: 14;
+  font-style:bold;
+}
   
   th{
     

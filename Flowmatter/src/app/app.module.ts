@@ -25,7 +25,7 @@ import { ExcelHomeComponent } from './excel-home/excel-home.component';
 const router: Routes = [
 
   {path: 'main', component: MainComponent },
-  {path:'dashboard',component:DataflowComponent},
+  {path:'dataflow',component:DataflowComponent},
   {path:'import-template',component:ImportTemplateComponent},
   {path:'export-template',component:ExportTemplateComponent},
   {path:'convert-template',component:ConvertTemplateComponent},

@@ -9,7 +9,7 @@
     position: relative;
     top: 30%;
     height: 50vh;
-    margin: 5%;
+    margin: 2%;
     padding: 20px;
     width: fit-content;
 }
@@ -17,9 +17,9 @@
 .convert{
     display: flex;
     flex-direction: column;
-    top: 80px;
+    top: 100px;
     position: relative;
-    left: 5px;
+    left: 3px;
 }
 
 .cube{
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 80px;
+    top: 90px;
     padding: 5px;
 
 }
@@ -50,14 +50,14 @@
     flex-direction: column;
     position: relative;
     left: 5px;
-    bottom: 30px;
+    bottom: 40px;
 }
 
 .import{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 80px;
+    top: 90px;
     padding: 5px;
 
 }
