@@ -12,4 +12,12 @@ export class ExcelComponent implements OnInit {
   ngOnInit() {
   }
 
+  selectedValue:string;
+
+  source = [
+    {srcName: 'Manual',  value: 'manual'},
+    {srcName: 'SFTP', value: 'sftp'},
+
+  ];
+
 }

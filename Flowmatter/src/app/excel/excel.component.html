@@ -1,89 +1,63 @@
+<mat-toolbar>
+        <div>New RDBMS DataSource</div>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
 
+    <div class="form-container">
+    <mat-form-field>
+        <input matInput type="text" placeholder=" Name" required >
+    </mat-form-field>
+    
+    <mat-form-field>
+            <input matInput type="text" placeholder="Description" required>
+    </mat-form-field>
 
-<h3>New Excel DataSource</h3>
+    <mat-form-field>
+            <mat-select placeholder="source Type" [(ngModel)]="selectedSource">
+                    <mat-option *ngFor="let src of source" [value]="src.value">
+                      {{ src.srcName }}
+                    </mat-option>
+                  </mat-select>
+    </mat-form-field>
 
-    <hr />
-    <div class="container col-md-7 col-md-offset-2">
-        <form action="/action_page.php">
-            <div class="form-group ">
-                <label for="name">Name:</label>
-                    <input type="name" class="form-control" id="name" required placeholder="Enter Data Source Name" name="name">
-                </div>
-            
-            <div class="form-group">
-                <label for="desc">Description:</label>
-                   <textarea class="form-control" id="desc" placeholder="Enter Data Source Description">
-                </textarea>
-                </div>
+    <div *ngIf="selectedSource === 'sftp'" class="ext">
+    
+    
+    <mat-form-field>
+            <input matInput type="text" placeholder="URL" required>
+    </mat-form-field>
 
+    <mat-form-field>
+            <input matInput type="number" placeholder="Port No" required>
+    </mat-form-field>
 
-            <div class="form-group">
-                <label for="sourcetype">Source Type:</label>
-                    <select class="form-control" id="source" required>
-                        <option id="1">MANUAL</option>
-                        <option id="2">SFTP</option>
-                    </select>
-                </div>
+    <mat-form-field>
+            <input matInput type="text" placeholder="User Name" required>
+    </mat-form-field>
 
-            <div class="form-group">
-                <label for="server">Server URI:</label>
-                    <input class="form-control" id="server" required placeholder="Server Name">
-                </div>
-
-               <div class="form-group">
-                <label for="dbname"><br/>Port No:</label>
-                    <input class="form-control" id="port" required placeholder="">
-                </div>
-            
-            <div class="form-group">
-                <label for="username"><br />User Name:</label>
-                    <input class="form-control" id="username" required placeholder="Enter User Name">
-                </div>
-
-            <div class="form-group">
-                <label  for="pass">Password:</label>
-                  <input class="form-control" id="pass" required placeholder="Password">
-                <div class="float-right">
-                   <button type="button" class="btn btn-default">Test Connection</button>
-                 </div>
-                </div>
-            <br/>
-                <div class="form-group">
-                    <label for="pass">Path:</label>
-
-                    <input  type="file" class="form-control" id="path" required placeholder="Folder Path">
-                    <div class="float-right">
-                    <input class="form-control" id="path" required placeholder="Folder Path">
-                    <div class="float-right">
-                    <button type="button" class="btn btn-default">Select File</button>
-
-                </div></div></div>
-            <br/>
-                <div class="form-group">
-                    <label for="pass">File Name:</label>
-                    <input class="form-control" id="file" required placeholder="File Name/Pattern">
-                    <div class="float-right">
-                        <label><input type="checkbox"> Pattern Based</label>
-                    </div>
-                </div>
-            <br/> 
-                <div class="form-group">
-                    <label for="auth">File Extension:</label>
-                    <select class="form-control" id="exten">
-                        <option id="1">.doc</option>
-                        <option id="2">.pdf</option>
-                        <option id="2">.txt</option>
-                    </select>
-                </div>
-
-                <div class="text-center">
-                    <input type="submit" class="btn btn-info" value="Submit">
-                </div>
-
-</form>
+    <div clss="pass">
+    <mat-form-field>
+            <input matInput type="text" placeholder="Password" required> 
+    </mat-form-field>
+    
+    <button mat-button>Test Connection</button>
     </div>
+    <mat-form-field>
+            <input matInput type="text" placeholder="Path" required>
+    </mat-form-field>
 
+    <mat-form-field>
+            <input matInput type="text" placeholder="File Name" required>
+    </mat-form-field>
 
-
-
+    <mat-form-field>
+            <mat-select placeholder="File Extension" >
+                    <mat-option value="xls" >.XLS</mat-option> 
+                    <mat-option value="csv">.CSV</mat-option>
+                  </mat-select>
+    </mat-form-field>
+</div>
+    
+        <button mat-raised-button color="primary">Submit</button>
+</div>
 

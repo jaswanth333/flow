@@ -12,4 +12,14 @@ export class RdbmsComponent implements OnInit {
   ngOnInit() {
   }
 
+  selectedValue:string;
+
+  source = [
+    {srcName: 'MySql',  value: 'mysql'},
+    {srcName: 'SQL Server', value: 'sql'},
+    {srcName: 'Oracle', value: 'orcl'}
+  ];
+
 }
+
+

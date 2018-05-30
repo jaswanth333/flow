@@ -17,6 +17,10 @@ import { SideNavComponent } from './side-nav/side-nav.component'
 import {RouterModule,Routes} from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { DataflowComponent } from './dataflow/dataflow.component';
+import { FormsModule } from '@angular/forms';
+import { RdbComponent } from './rdb/rdb.component';
+import { SaleHomeComponent } from './sale-home/sale-home.component';
+import { ExcelHomeComponent } from './excel-home/excel-home.component';
 
 const router: Routes = [
 
@@ -26,7 +30,11 @@ const router: Routes = [
   {path:'export-template',component:ExportTemplateComponent},
   {path:'convert-template',component:ConvertTemplateComponent},
   {path: 'side-nav', component: SideNavComponent, children: 
-      [   { path: 'nsv' ,  component: NsvComponent,   },
+      [ 
+        {path:'rdb',component:RdbComponent},
+        {path:'sale-home',component:SaleHomeComponent},
+        {path:'excel-home',component:ExcelHomeComponent},
+        { path: 'nsv' ,  component: NsvComponent,   },
           { path: 'rdbms', component: RdbmsComponent, },
           { path: 'sales', component: SalesComponent, },
           { path: 'excel', component: ExcelComponent, },
@@ -122,10 +130,13 @@ const childlinks:Routes = [
     NsvtwoComponent,
     MainComponent,
     DataflowComponent,
+    RdbComponent,
+    SaleHomeComponent,
+    ExcelHomeComponent,
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
 RouterModule.forRoot(router),
