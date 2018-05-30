@@ -55,3 +55,10 @@ fieldset{
     margin: 5%;
 }
 
+mat-toolbar{
+    width:100%;
+    height: fit-content;
+    padding: 3px;
+    display: flex;
+    align-content: space-between;
+}

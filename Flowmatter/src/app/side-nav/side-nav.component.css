@@ -9,7 +9,7 @@
 {
    
     font-size: 14;
-    border: 1px solid gray;
+    border-right: 1px solid gray;
     
   
     
@@ -44,5 +44,5 @@ mat-list-item a:hover{
     left:30%;
     width:70%;
     height:inherit;
-    border: 1px solid gray;
+   
 }
