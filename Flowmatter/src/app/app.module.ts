@@ -10,7 +10,10 @@ import { WebqueryComponent } from './webquery/webquery.component';
 import { ExportComponent } from './export/export.component';
 import { ReviewComponent } from './review/review.component';
 import { UploadComponent } from './upload/upload.component';
-import { CsvconComponent } from './csvcon/csvcon.component'
+import { CsvconComponent } from './csvcon/csvcon.component';
+import { CsvdataComponent } from './csvdata/csvdata.component'
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { CsvconComponent } from './csvcon/csvcon.component'
     ReviewComponent,
     UploadComponent,
     CsvconComponent,
+    CsvdataComponent,
     
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
