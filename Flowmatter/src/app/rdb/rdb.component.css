@@ -1,4 +1,27 @@
-button{
-    width: fit-content;
-    align-self: right;
-}
+table {
+    width: 100%;
+  }
+  
+  p{
+    color: blue;
+  }
+  
+  th{
+    
+    color: black;
+    font-size: 15px;
+  }
+  
+  mat-toolbar{
+    display: flex;
+    justify-content:space-between;
+    height: fit-content;
+  }
+  
+  mat-toolbar .btn{
+    align-items: flex-end;
+  }
+  
+  mat-toolbar .content{
+    align-items: flex-start;
+  }

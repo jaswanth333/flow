@@ -1,57 +1,35 @@
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-</head>
+<mat-toolbar>
+        <div>New CSV DataSource</div>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+
+    <div class="form-container">
+    <mat-form-field>
+        <input matInput type="text" placeholder="Datasource Name" required >
+    </mat-form-field>
+    
+    <mat-form-field>
+            <input matInput type="text" placeholder="Description" required>
+    </mat-form-field>
+
+   
+    
+    <mat-form-field>
+        <mat-select placeholder="Select Type">
+          <mat-option value="manual" >Manual</mat-option> 
+          <mat-option value="auto">Automatic</mat-option>
+        </mat-select>
+    </mat-form-field>
 
 
-<h3>New CSV Datasource</h3>
-
-<hr />
-
-
-    <div class="container col-md-6 col-md-offset-3">
-        <form action="/action_page.php">
-            <div class="form-group ">
-                <label for="name">Name:</label>
-                <input type="name" class="form-control" id="name" required placeholder="Enter Data Source Name" name="name">
-            </div>
-
-            <div class="form-group">
-                <label for="desc">Description:</label>
-                <textarea class="form-control" required id="desc" placeholder="Enter Data Source Description">
-                </textarea>
-            </div>
-
-            
-            <div class="form-group">
-                <label for="sourcetype">Source Type:</label>
-                
-                <label class="checkbox-inline">
-                    <input type="checkbox" required value="">Multiple metadata
-                </label>
-                <select class="form-control" id="source" required>
-                    <option id="1">Manual</option>
-                    <option id="2">SFTP</option>
-
-                </select>
-                 </div>
-                 
-
-
-            <div class="form-group">
-                <label for="sourcetype">File extension:</label>
-                <select class="form-control" id="source" required>
-                    <option id="1">CSV</option>
-                    <option id="2">TXT</option>
-                    <option id="3">DAT</option>
-                    <option id="4">TSV</option>
-                </select>
-                
-            </div>
-
-            <div class="text-center">
-                <input type="submit" class="btn btn-info" value="Submit" required>
-            </div>
-
-        </form>
-    </div>
+    <mat-form-field>
+            <mat-select placeholder="File Extension">
+                    <mat-option value="csv" >CSV</mat-option> 
+                    <mat-option value="txt">TXT</mat-option>
+                    <mat-option value="dat">DAT</mat-option>
+                  </mat-select>
+    </mat-form-field>
+    
+        <button mat-raised-button color="primary">Submit</button>
+</div>
 

@@ -6,23 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nsv.component.css']
 })
 export class NsvComponent implements OnInit {
-  name = 'Angular 5';
-  myItems: any[];
 
-  constructor() { 
-    this.myItems = [
-      { name: 'course', status: 'active',editconfiguration:'edit',state: true },
-      
-    ]
-  }
-  public getRowsValue(flag) {
-    if (flag === null) {
-      return this.myItems.length;
-    } else {
-      return this.myItems.filter(i => (i.state == flag)).length;
-    }
-  }
+  constructor() { }
+
   ngOnInit() {
   }
 
-}
+ 
+    displayedColumns = ['position', 'name', 'weight', 'symbol','symbol1'];
+    dataSource = ELEMENT_DATA;
+  }
+  
+  export interface PeriodicElement {
+    name: string;
+    position: number;
+    weight: string;
+    symbol: string;
+    symbol1:string;
+  }
+  
+  const ELEMENT_DATA: PeriodicElement[] = [
+    {position: 1, name: 'Course', weight: 'active', symbol: 'Edit',symbol1:'x'},
+    
+  ];
