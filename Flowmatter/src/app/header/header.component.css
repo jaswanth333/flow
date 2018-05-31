@@ -29,3 +29,7 @@ button:hover{
     color:black;
     background-color:#3D5C87;
 }
+
+mat-menu button{
+    height: fit-content;
+}
