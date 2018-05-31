@@ -2,23 +2,30 @@
 mat-toolbar{
     background-color: #3D5C87;
     width: 100%;
-    height:7vh;
-    
-    
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+
 mat-toolbar .container{ 
     display:flex;
     flex-direction: row;
-    align-items: flex-end;
+
 }
 
-span{
+
+
+button{
     color:white;
     background-color: #3D5C87;
 }
 
-span:hover{
+mat-toolbar button.mat-menu-item{
+    width:fit-content;
+}
+button:hover{
     color:black;
     background-color:#3D5C87;
 }
-

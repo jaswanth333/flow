@@ -1,19 +1,14 @@
-.container-1{
-    
+mat-card{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid silver;
-    border-radius: 5px;
-    position: relative;
-    top: 30%;
-    height: 50vh;
-    margin: 2%;
+    position: fixed;
+    height:50vh;
+    top:20%;
     padding: 20px;
-    width: fit-content;
+    width:fit-content;
 }
-
 .convert{
     display: flex;
     flex-direction: column;

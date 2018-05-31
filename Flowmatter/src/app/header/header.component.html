@@ -3,27 +3,27 @@
     <img src=".\assets\images\poinmatter.png" alt="pointmatter">
     <div class="container">
      
-      <span mat-menu-item [matMenuTriggerFor]="configsubmenu">
+      <button mat-menu-item [matMenuTriggerFor]="configsubmenu">
         <mat-icon color="white" >settings</mat-icon>Configuration<mat-icon color="white">keyboard_arrow_down</mat-icon>
-      </span>
+      </button>
      
-      <span mat-menu-item routerLink="/dataflow">
+      <button mat-menu-item routerLink="/dataflow">
         <mat-icon  color="white">home</mat-icon>Dash Board
-      </span>
+      </button>
     
       
-      <span mat-menu-item routerLink=" ">
+      <button mat-menu-item routerLink=" ">
         <mat-icon color="white">help_outline</mat-icon>Help
-      </span>
+      </button>
      
     </div>
   </mat-toolbar>
   
-   <div class='drop-down'>
+ 
   <mat-menu #configsubmenu="matMenu" [overlapTrigger]="false">
-      <span mat-menu-item routerLink="/side-nav">Manage DataSource</span>
-      <span mat-menu-item routerLink="/import-template">Import Activity</span>
-      <span mat-menu-item routerLink="/export-template">Export Activity</span>
-      <span mat-menu-item routerLink="/convert-template">Convert Activity</span>
+      <button mat-menu-item routerLink="/side-nav">Manage DataSource</button>
+      <button mat-menu-item routerLink="/import-template">Import Activity</button>
+      <button mat-menu-item routerLink="/export-template">Export Activity</button>
+      <button mat-menu-item routerLink="/convert-template">Convert Activity</button>
     </mat-menu>
-  </div>
+
