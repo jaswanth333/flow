@@ -8,13 +8,18 @@ mat-card{
     top:20%;
     padding: 20px;
     width:fit-content;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px 3px;    
+}
+.dataflow{
+    margin:3%;
 }
 .convert{
     display: flex;
     flex-direction: column;
-    top: 100px;
     position: relative;
-    left: 3px;
+    top: 14%;
+    padding: 5px;
 }
 
 .cube{
@@ -28,7 +33,7 @@ mat-card{
     display: flex;
     flex-direction: column;
     position: relative;
-    top:40px;
+    top:2%;
     padding: 5px;
 }
 
@@ -36,7 +41,7 @@ mat-card{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 90px;
+    top: 14%;
     padding: 5px;
 
 }
@@ -52,20 +57,31 @@ mat-card{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 90px;
+    top: 14%;
     padding: 5px;
 
 }
 
 .upload{
-    bottom: 35px;
+    bottom: 14%;
     position: relative;
     padding: 5px;
 }
 
+.db{
+    top: 5%;
+}
 
 h4,p{
  color: rgb(37, 35, 35);
  margin-bottom: 3%;
 }
-
+.mat-card-title{
+font-size: 14px;
+font-weight: 200;
+}
+.material-icons {
+    font-size: 75px;
+    top: 7%;
+    color: #3D5C87;
+}
