@@ -90,6 +90,17 @@ component:DataflowComponent,
 
    
 ]
+import { ImportComponent } from './import/import.component';
+import { NextComponent } from './next/next.component';
+import { ConvertComponent } from './convert/convert.component';
+import { WebqueryComponent } from './webquery/webquery.component';
+import { ExportComponent } from './export/export.component';
+import { ReviewComponent } from './review/review.component';
+import { UploadComponent } from './upload/upload.component';
+import { CsvconComponent } from './csvcon/csvcon.component';
+import { CsvdataComponent } from './csvdata/csvdata.component'
+import { FormsModule } from '@angular/forms';
+
 
 const childlinks:Routes = [
   {
@@ -133,6 +144,15 @@ const childlinks:Routes = [
     RdbComponent,
     SaleHomeComponent,
     ExcelHomeComponent,
+    ImportComponent,
+    NextComponent,
+    ConvertComponent,
+    WebqueryComponent,
+    ExportComponent,
+    ReviewComponent,
+    UploadComponent,
+    CsvconComponent,
+    CsvdataComponent,
     
   ],
   imports: [
@@ -140,6 +160,7 @@ const childlinks:Routes = [
     BrowserAnimationsModule,
     MaterialModule,
 RouterModule.forRoot(router),
+    FormsModule
 
   ],
 

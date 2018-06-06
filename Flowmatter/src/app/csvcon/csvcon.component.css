@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+  }
+
+  p{
+    color: blue;
+}
+
+th{
+    
+    color: black;
+    font-size: 15px;
+  }

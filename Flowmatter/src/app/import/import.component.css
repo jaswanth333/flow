@@ -1,0 +1,29 @@
+h1 {
+  
+    position: relative;
+    text-align: initial;
+}
+
+ .tableimport {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+  overflow: auto;
+  border: solid black;
+}
+
+.sidenav-container {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+  border: 1px solid #555;
+  color: black;
+}
+
+th{
+  background-color: rgb(225, 227, 228);
+  color: black;
+  font-size: 15px;
+}
+

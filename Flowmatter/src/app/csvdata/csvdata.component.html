@@ -1,0 +1,68 @@
+<div class="form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="NAME" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Description"></textarea>
+  </mat-form-field>
+
+<mat-form-field>
+  <mat-select placeholder="Source Type" [(ngModel)]="selectedSource" required>
+    <mat-option *ngFor="let src of source" [value]="src.value">
+      {{ src.srcName }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-checkbox>Multiple MetaData</mat-checkbox>
+<div *ngIf="selectedSource === 'mysql'">
+  
+  </div>
+  <div *ngIf="selectedSource === 'sql'">
+
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="Server URL" required>
+      </mat-form-field>
+      <br/>
+    
+      <mat-form-field>
+          <input matInput placeholder="Port no:" required>
+        </mat-form-field>
+        <br/>
+
+        <mat-form-field>
+            <input matInput placeholder="Username" required>
+          </mat-form-field>
+          <br/>
+          <mat-form-field>
+              <input matInput placeholder="Password" required>
+            </mat-form-field>
+            &nbsp;&nbsp;<button mat-raised-button>Test Connection</button>
+            <br/>
+            <mat-form-field>
+                <input matInput placeholder="Path" required>
+              </mat-form-field>
+              &nbsp;&nbsp;<button mat-raised-button>Select File</button>
+              <br/>
+              <mat-form-field>
+                  <input matInput placeholder="File Name" required>
+                </mat-form-field>
+                &nbsp;&nbsp;<mat-checkbox>Pattern Based</mat-checkbox>
+      
+    
+      
+    </div>
+    </div>
+    
+    <mat-form-field>
+        <mat-select placeholder="File Extension" required >
+          <mat-option value="option1">CSV</mat-option>
+          <mat-option value="option2">TXT</mat-option>
+          <mat-option value="option3">DAT</mat-option>
+          <mat-option value="option4">TSV</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary">SUBMIT</button>
+    </div>
