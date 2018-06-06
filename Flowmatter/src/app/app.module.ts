@@ -21,7 +21,15 @@ import { FormsModule } from '@angular/forms';
 import { RdbComponent } from './rdb/rdb.component';
 import { SaleHomeComponent } from './sale-home/sale-home.component';
 import { ExcelHomeComponent } from './excel-home/excel-home.component';
-
+import { ImportComponent } from './import/import.component';
+import { NextComponent } from './next/next.component';
+import { ConvertComponent } from './convert/convert.component';
+import { WebqueryComponent } from './webquery/webquery.component';
+import { ExportComponent } from './export/export.component';
+import { ReviewComponent } from './review/review.component';
+import { UploadComponent } from './upload/upload.component';
+import { CsvconComponent } from './csvcon/csvcon.component';
+import { CsvdataComponent } from './csvdata/csvdata.component'
 const router: Routes = [
 
   {path: 'main', component: MainComponent },
@@ -90,15 +98,7 @@ component:DataflowComponent,
 
    
 ]
-import { ImportComponent } from './import/import.component';
-import { NextComponent } from './next/next.component';
-import { ConvertComponent } from './convert/convert.component';
-import { WebqueryComponent } from './webquery/webquery.component';
-import { ExportComponent } from './export/export.component';
-import { ReviewComponent } from './review/review.component';
-import { UploadComponent } from './upload/upload.component';
-import { CsvconComponent } from './csvcon/csvcon.component';
-import { CsvdataComponent } from './csvdata/csvdata.component'
+
 import { FormsModule } from '@angular/forms';
 
 
