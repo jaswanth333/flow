@@ -37,6 +37,11 @@ const router: Routes = [
   {path:'import-template',component:ImportTemplateComponent},
   {path:'export-template',component:ExportTemplateComponent},
   {path:'convert-template',component:ConvertTemplateComponent},
+  {path:'import',component:ImportComponent},
+  {path:'upload',component:UploadComponent},
+  {path:'review',component:ReviewComponent},
+  {path:'convert',component:ConvertComponent},
+  
   {path: 'side-nav', component: SideNavComponent, children: 
       [ 
         {path:'rdb',component:RdbComponent},
