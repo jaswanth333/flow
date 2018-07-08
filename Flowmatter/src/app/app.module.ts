@@ -38,6 +38,7 @@ const router: Routes = [
   {path:'export-template',component:ExportTemplateComponent},
   {path:'convert-template',component:ConvertTemplateComponent},
   {path:'import',component:ImportComponent},
+  {path:'export',component:ExportComponent},
   {path:'upload',component:UploadComponent},
   {path:'review',component:ReviewComponent},
   {path:'convert',component:ConvertComponent},
