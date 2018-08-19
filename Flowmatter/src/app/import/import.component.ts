@@ -14,7 +14,16 @@ export class ImportComponent implements OnInit {
 
   displayedColumns = ['position', 'name', 'weight', 'symbol','symbol1','symbol2','symbol3','symbol4','symbol5','symbol6','symbol7','symbol8'];
   dataSource = ELEMENT_DATA;
+
+  source = [
+    {srcName: 'CSV Convertor',  value: 'csv'},
+    {srcName: 'RDBMS Convertor', value: 'rdbms'},
+    {srcName: 'EXCEL Convertor', value: 'excel'},
+    {srcName:'SalesForce Convertor',value:'sales'}
+  ];
+  
 }
+
 
 export interface Element {
   name: string;

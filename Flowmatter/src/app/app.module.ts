@@ -29,10 +29,13 @@ import { ExportComponent } from './export/export.component';
 import { ReviewComponent } from './review/review.component';
 import { UploadComponent } from './upload/upload.component';
 import { CsvconComponent } from './csvcon/csvcon.component';
-import { CsvdataComponent } from './csvdata/csvdata.component'
+import { CsvdataComponent } from './csvdata/csvdata.component';
+import { HomeComponent } from './home/home.component';
+
 const router: Routes = [
 
   {path: 'main', component: MainComponent },
+  {path:'home',component:HomeComponent},
   {path:'dataflow',component:DataflowComponent},
   {path:'import-template',component:ImportTemplateComponent},
   {path:'export-template',component:ExportTemplateComponent},
@@ -159,6 +162,8 @@ const childlinks:Routes = [
     UploadComponent,
     CsvconComponent,
     CsvdataComponent,
+    HomeComponent,
+  
     
   ],
   imports: [

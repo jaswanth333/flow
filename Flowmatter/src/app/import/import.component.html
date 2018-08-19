@@ -2,13 +2,14 @@
   <h1><mat-icon>settings</mat-icon>  Import source data into cloud DB</h1></mat-card>
   <h2>select the importer:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <mat-form-field>
-    <mat-select >
-      <mat-option value="option1">csvConnector</mat-option>
-      <mat-option value="option2">rdbmsConnector</mat-option>
-      <mat-option value="option3">sales_forceConnector</mat-option>
-      <mat-option value="option4">excelConnector</mat-option>
-    </mat-select>
-  </mat-form-field>&nbsp;&nbsp;
+
+          <mat-select placeholder="" [(ngModel)]="selectedSource">
+                  <mat-option *ngFor="let src of source" [value]="src.value">
+                    {{ src.srcName }}
+                  </mat-option>
+                </mat-select>
+  
+  </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <button mat-raised-button color="primary">START</button>&nbsp;&nbsp;&nbsp;&nbsp;
   <button mat-raised-button color="warn">STOP</button>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

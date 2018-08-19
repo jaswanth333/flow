@@ -1,3 +1,9 @@
 .output{
    overflow-y: auto;
 }
+
+.home{
+    position: absolute;
+    top: 200px;
+    left:200px;
+}
